@@ -27,7 +27,7 @@ namespace MasterPrompt.ModelStitching.Examples
             {
                 if (GUI.Button(new Rect(0, offset, buttonWidth, buttonHeight), cloth.name))
                 {
-                    RemoveWorn();
+                    //RemoveWorn();
                     Wear(cloth);
                 }
                 offset += buttonHeight;

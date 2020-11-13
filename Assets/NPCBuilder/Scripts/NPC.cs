@@ -1,14 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-
 
 namespace TheGameMecha.NPCBuilder
 {
+    [CreateAssetMenu(fileName = "NPC Data", menuName = "NPC Builder/NPC Data")]
     public class NPC : ScriptableObject
     {
-        public GameObject head;
-        public GameObject body;
-        public GameObject pants;
+        public List<NPCBodyPart> bodyParts;
     }
 }

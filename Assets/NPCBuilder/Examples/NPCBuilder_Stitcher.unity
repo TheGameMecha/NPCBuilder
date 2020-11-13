@@ -224,7 +224,6 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
-  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -297,23 +296,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &963194229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7a2d6f5c742e477b95ee53d7b892b4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clothing:
-  - {fileID: 1537728697721521523, guid: 4ff1e3ac289567141a34a68961237811, type: 3}
-  - {fileID: 1009264544080839554, guid: c4d1a1f14bcdb2d41ae55b62903b2c78, type: 3}
-  - {fileID: 1474322258725148714, guid: 2962bc164b6af2945ad5b36979198033, type: 3}
-  avatar: {fileID: 6027898186331906082}
 --- !u!1 &59277654444964585
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,6 +870,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7348815411948687921}
   - component: {fileID: 825917331317899083}
+  - component: {fileID: 6027898186331906083}
   m_Layer: 0
   m_Name: BaseNPC
   m_TagString: Untagged
@@ -895,6 +878,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6027898186331906083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6027898186331906082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 545b3ec200ea4e14da56f4eebecbc142, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcData: {fileID: 11400000, guid: c2118d5aa4a4f2841ab7a8209f36c641, type: 2}
+  model: {fileID: 6027898186331906082}
 --- !u!1 &6063917679657231690
 GameObject:
   m_ObjectHideFlags: 0
@@ -1062,7 +1059,7 @@ GameObject:
   - component: {fileID: 7916098041544037522}
   - component: {fileID: 3922433074142225309}
   m_Layer: 0
-  m_Name: Body
+  m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
