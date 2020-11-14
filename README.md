@@ -28,7 +28,7 @@ You'll need to create the data for each individual piece you want to be usable b
 
 ## Creating an NPC Template
 In order for the builder to create your NPC, it needs a template telling it which parts to use.
-* Create an NPC Template by opening your project window and right clicking, Create > NPC Builder > NPC Body Part
+* Create an NPC Template by opening your project window and right clicking, Create > NPC Builder > NPC Template
 * In the Template File, select the number of body parts to use (5 for standard models) and drag in the associated body part.
 
 Your NPC Template can now be used by the NPC Builder component.

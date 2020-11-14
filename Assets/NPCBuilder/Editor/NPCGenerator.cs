@@ -89,7 +89,7 @@ namespace TheGameMecha.NPCBuilder
                 AssetDatabase.Refresh();
                 for (int i = 0; i < numberOfNpcs; i++)
                 {
-                    NPC newNPC = CreateInstance<NPC>();
+                    NPCTemplate newNPC = CreateInstance<NPCTemplate>();
 
                     int chosenHead = Random.Range(0, headBodyParts.Length);
                     int chosenBody = Random.Range(0, bodyBodyParts.Length);

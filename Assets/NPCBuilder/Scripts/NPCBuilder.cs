@@ -7,7 +7,7 @@ namespace TheGameMecha.NPCBuilder
 {
     public class NPCBuilder : MonoBehaviour
     {
-        public NPC npcData;
+        public NPCTemplate npcData;
         public GameObject model;
 
         private Stitcher stitcher;

@@ -3,8 +3,8 @@ using UnityEngine;
 
 namespace TheGameMecha.NPCBuilder
 {
-    [CreateAssetMenu(fileName = "NPC Data", menuName = "NPC Builder/NPC Data")]
-    public class NPC : ScriptableObject
+    [CreateAssetMenu(fileName = "NPC Template", menuName = "NPC Builder/NPC Template")]
+    public class NPCTemplate : ScriptableObject
     {
         public List<NPCBodyPart> bodyParts;
     }
