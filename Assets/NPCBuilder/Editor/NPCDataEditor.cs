@@ -30,18 +30,19 @@ namespace TheGameMecha.NPCBuilder
 
             if (prefab != null)
             {
-
                 if (gameObjectEditor == null)
                     gameObjectEditor = Editor.CreateEditor(prefab.objectReferenceValue);
-
-                if (EditorGUI.EndChangeCheck())
-                {
-                    gameObjectEditor = Editor.CreateEditor(prefab.objectReferenceValue);
-                }
 
                 gameObjectEditor.OnInteractivePreviewGUI(GUILayoutUtility.GetRect(256, 256), bgColor);
             }
 
+            if (prefab != null)
+            {
+                if (EditorGUI.EndChangeCheck())
+                {
+                    gameObjectEditor = Editor.CreateEditor(prefab.objectReferenceValue);
+                }
+            }
             serializedObject.ApplyModifiedProperties();
         }
     }
