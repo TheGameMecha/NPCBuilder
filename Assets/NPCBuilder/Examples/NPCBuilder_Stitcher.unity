@@ -892,6 +892,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npcData: {fileID: 11400000, guid: c2118d5aa4a4f2841ab7a8209f36c641, type: 2}
   model: {fileID: 6027898186331906082}
+  useOneMaterial: 1
   material: {fileID: 2100000, guid: 9fb0064adcb7af44f81188079a6f268c, type: 2}
 --- !u!1 &6063917679657231690
 GameObject:
