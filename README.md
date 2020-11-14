@@ -44,4 +44,5 @@ If you wish to create a large number of NPCs with variations of models for the d
 * Select the number of body part variations to use for each different body part
 * Select the body part variations you wish to us
 * Hit "Generate"
+
 Your Generated NPCs can be found in Assets/NPCBuilder/Data/
