@@ -10,9 +10,11 @@ namespace TheGameMecha.NPCBuilder
         public NPCTemplate npcData;
         public GameObject model;
 
+        public bool useOneMaterial = false;
+        public Material material;
+
         private Stitcher stitcher;
         private GameObject spawnedObject;
-
 
         private bool _isReady;
         public bool IsReady
@@ -41,6 +43,17 @@ namespace TheGameMecha.NPCBuilder
                 yield return new WaitForEndOfFrame();
             }
 
+            if (useOneMaterial)
+            {
+                SkinnedMeshCombiner.CombineMeshes(gameObject, material);
+                for (int i = 0; i < transform.childCount; i++)
+                {
+                    if (transform.GetChild(i).name.Contains("SpawnedBodyPart"))
+                    {
+                        Destroy(transform.GetChild(i).gameObject);
+                    }
+                }
+            }
             _isReady = true;
         }
 
@@ -49,6 +62,7 @@ namespace TheGameMecha.NPCBuilder
             if (part == null)
                 return;
             part = Instantiate(part);
+            part.name += "SpawnedBodyPart"; // This is for deleting it later
             spawnedObject = stitcher.Stitch(part, model);
         }
     }

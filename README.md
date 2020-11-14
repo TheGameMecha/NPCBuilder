@@ -14,6 +14,7 @@ In order to utilize this tool, you'll need to prepare your body part models in a
 * Each "body part" must be a separate object within your 3D modeling program
 * All the parts must be rigged to the same skeleton
 * Models *can* share a material, but do not have to
+* If you chose to use one material, you will want to select the "Use One Material" checkbox in the NPC Builder component
 * Model should be a \*.fbx file with skeleton data included
 
 ## Creating NPC Body Parts
@@ -36,6 +37,7 @@ Your NPC Template can now be used by the NPC Builder component.
 ## Using the NPCBuilder Component
 * Attach this component to your NPC GameObject containing the logic for controlling how the NPC moves etc.
 * Drag in your NPC Data file and the Base model into their respective property fields
+* If you want to use only 1 material, select the "Use One Material" checkbox and drag in the material. This will optimize your model into 1 skinned mesh renderer, improving performance.
 
 ## Using the NPC Generator
 If you wish to create a large number of NPCs with variations of models for the different body parts, you can use the included NPC Generator Window to do that
