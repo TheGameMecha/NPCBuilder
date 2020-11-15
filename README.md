@@ -1,7 +1,11 @@
 # NPCBuilder
  An NPC Building solution for Unity3D. Allows you to create NPC models by combining body parts in different variations together.
-
-Based upon https://github.com/masterprompt/ModelStitching
+ 
+# Credits
+* Sticher code https://github.com/masterprompt/ModelStitching
+* Low Poly Base Model https://sketchfab.com/3d-models/low-poly-male-base-mesh-7b9411ff0c624321baf4caac014bc0bd
+* "Walking" Animation from Mixamo
+* NPC Builder code by Scott Melanson (TheGameMecha)
 
 # Installation
 Download the .unitypackage file from the Releases tab and Import it into Unity
