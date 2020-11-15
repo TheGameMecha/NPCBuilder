@@ -48,3 +48,6 @@ If you wish to create a large number of NPCs with variations of models for the d
 * Hit "Generate"
 
 Your Generated NPCs can be found in Assets/NPCBuilder/Data/
+
+# Suggestions & Issues
+If you find an issue with the NPC Builder tool or wish to request a feature, please open an issue :)
